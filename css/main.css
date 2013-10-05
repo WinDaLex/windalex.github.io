@@ -1,133 +1,108 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body { height: 100%; }
-
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+    margin:             0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+a {
+    color:              #307ea9;
+    text-decoration:    none;
 }
 
-ul.posts li {
-  line-height: 1.75em;
+a:hover {
+    color:              #fd5d83;
 }
 
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+#container {
+    margin:             auto;
+    width:              960px;
 }
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+#header {
+    padding:            20px 20px 10px 80px;
 }
 
-.site .header a {
-  font-weight: bold;
-  text-decoration: none;
+#content {
 }
 
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
+#main {
+    width:              680px;
+    float:              left;
 }
 
-.site .header h1.title a {
-  color: #a00;
+#sidebar {
+    margin-left:        690px;
+    padding:            30px;
+    padding:            30px;
+    box-shadow:         0 0 5px #c8c8c8;
+    border-bottom:      1px solid #ddd;
+    border-radius:      3px;
 }
 
-.site .header h1.title a:hover {
-  color: #000;
+#footer {
+    clear:              both;
+    font-size:          small;
+    text-align:         center;
+    padding:            100px;
 }
 
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+#home {
+    padding:            30px;
+    box-shadow:         0 0 5px #c8c8c8;
+    border-bottom:      1px solid #ddd;
+    border-radius:      3px;
+
 }
 
-.site .header a.extra:hover {
-  color: #000;
+#intro img {
+    border-radius:      100%;
+    height:             200px;
+    width:              200px;
 }
 
-.site .meta {
-  color: #aaa;
+#sitename {
+    font-size:          500%;
+    font-family:        monospace;
 }
 
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
+.item {
+    padding:            30px;
+    margin-bottom:      30px;
+    border-top:         1px solid #c8c8c8;
 }
 
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
+.item:first-child {
+    border-top:         0;
 }
 
-.site .footer .contact a {
-  color: #8085C1;
+
+.title {
+    font-family:        sans-serif;
+    font-size:          160%;
+    font-weight:        bold;
 }
 
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+.date {
+    font-family:        monospace;
+    color:              #aaa;
 }
 
-.site .footer .rss img {
-  border: 0;
+.summary {
+    padding:            10px;
+    font-family:        Georgia;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
+.post {
+    box-shadow:         0 0 5px #c8c8c8;
+    border-bottom:      1px solid #ddd;
+    border-radius:      3px;
+    font-size:          130%;
+    padding:            30px;
+}
 
-/* standard */
+/* original jekyll config */
+.post h2 {
+    font-family:        sans-serif;
+}
+
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
@@ -138,6 +113,7 @@ ul.posts span {
   margin-left: 1.35em;
 }
 
+/* code highlight */
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
